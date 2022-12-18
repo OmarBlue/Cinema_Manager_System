@@ -1,0 +1,12 @@
+{% extends "cinemaManager/layout.html" %}
+{% block title %}
+Add Film
+{% endblock %}
+{% block content %}
+    <h3>Add Film</h3>
+    <form method="POST" class="log-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Add Film</button>
+    </form>
+{% endblock %}
