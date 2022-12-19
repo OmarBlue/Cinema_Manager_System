@@ -28,6 +28,8 @@
                     <td>{{ title.age_rating }}</td>
                     <td>{{ title.duration }}</td>
                     <td>{{ title.description }}</td>
+                    <td><a href="delete/{{ title.id }}">Delete</a></td>
+                    <td><a href="update/{{ title.id }}">Update</a></td>
                 </tr>
             {% endfor %}
             </tbody>
