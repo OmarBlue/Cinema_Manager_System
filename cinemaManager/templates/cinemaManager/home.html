@@ -1,0 +1,40 @@
+{% extends "cinemaManager/layout.html" %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+    <h2 ALIGN='center'>Recently Added Film</h2>
+
+    {% if film_list %}
+        <table class="film_list">
+            <thead>
+            <tr>
+                <th>Date Added</th>
+                <th>Time Added</th>
+                <th>Title</th>
+                <th>Age Rating</th>
+                <th>Duration</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for title in film_list %}
+                <tr>
+                    <td>{{ title.log_date | date:'d M Y' }}</td>
+                    <td>{{ title.log_date | time:'H:i:s' }}</td>
+                    <td>
+                        {{ title.title }}
+                    </td>
+                    <td>{{ title.age_rating }}</td>
+                    <td>{{ title.duration }}</td>
+                    <td>{{ title.description }}</td>
+                    <td><a href="delete/{{ title.id }}">Delete</a></td>
+                    <td><a href="update/{{ title.id }}">Update</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No film have been added. Use the <a href="{% url 'addFilm' %}">Add Film form</a>.</p>
+    {% endif %}
+{% endblock %}

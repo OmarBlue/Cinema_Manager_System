@@ -1,0 +1,23 @@
+{% extends "cinemaManager/layout.html" %}
+{% block title %}
+Update Film
+{% endblock %}
+{% block content %}
+    <h3>Update Film</h3>
+    <form action="updatefilm/{{ films.id }}" method="post">
+        {% csrf_token %}
+        Title:<br>
+        <input name="title" value="{{ films.title }}">
+        <br><br>
+        Age Rating:<br>
+        <input name="age_rating" value="{{ films.age_rating }}">
+        <br><br>
+        Duration:<br>
+        <input name="duration" value="{{ films.duration }}">
+        <br><br>
+        Description:<br>
+        <input name="description" value="{{ films.description }}">
+        <br><br>
+        <input type="submit" value="Update">
+    </form>
+{% endblock %}
