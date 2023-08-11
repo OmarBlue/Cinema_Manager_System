@@ -1,0 +1,144 @@
+ /* Basic Styles */
+ html, body {
+    margin: 0;  
+    padding: 0;
+}
+
+.background {
+    position: fixed; /* It stays in the same position even when you scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind all other content */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    height: 150px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    color: #555;
+}
+
+.right-buttons {
+    margin-left: 60%;
+    margin-right: 3%;
+}
+
+
+.right-buttons a {
+    font-family: 'Pacifico';
+    transition: color 0.6s, transform 0.6s; /* for smooth transition */
+    color: #fff; /* Assuming the default color is white */
+    text-decoration: none; /* To remove underline */
+    padding: 5px 10px; /* Some padding for spacing */
+
+}
+
+.right-buttons a:hover {
+    filter: sepia(2) hue-rotate(-20deg) saturate(8);
+    transform: translateX(75px); 
+}
+
+
+/* Intro Styles */
+.intro {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Projects Styles */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 15%;
+    padding-left: 2%;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img {
+    transition: filter 0.5s; /* for smooth transition */
+}
+
+.logo:hover img {
+    filter: brightness(1.5) sepia(1) hue-rotate(-50deg) saturate(3);
+}
+
+.social-media-icons a {
+    margin: 0 10px;  /* Adds space between icons */
+    font-size: 24px; /* Adjust the icon size */
+    color: #FFFFFF; /* Adjust icon color to white */
+}
+
+.social-media-icons a:hover {
+    color: #DDDDDD; /* Adjust the hover color of icons */
+}
+
+#contact {
+    padding: 4%;
+    color: white;
+    padding-left: 20%; 
+    padding-right: 20%;
+    background-color: black;
+}
+
+.contact-link {
+    color: rgba(255, 217, 0, 0.495);          /* Sets the text color to gold */
+    text-decoration: none; /* Removes the underline */
+}
+
+.contact-link:hover {
+    color: darkgoldenrod; /* Sets a different color when you hover over the link */
+}
+
+#aboutme {
+    text-align: center;
+    margin: 10%;
+}

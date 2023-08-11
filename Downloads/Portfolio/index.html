@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Aratuc - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img href="#" src="assets/images/Omar_Logo.png" alt="Omar Logo"> 
+        </div>
+        <div class="right-buttons">
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="intro">
+        <h1>Hello! I'm Omar Aratuc</h1>
+        <p id="aboutme">
+            I'm from the Philippines and recently earned my BSc (Hons) in Computer Science from the University of the West of England (UWE). 
+            I'm passionate about technology and programming, always eager to learn and understand code deeper. 
+            My dedication has gained me respect from peers and mentors. I'm also a team player, always ready to collaborate and find solutions.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <!-- Sample project card; repeat for each project -->
+        <div class="project-card">
+            <h3>Cinema Booking System Website</h3>
+            <p>Description of the project.</p>
+            <a href="link-to-project-1">See Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Workout Reminder & Logger Mobile Application</h3>
+            <p>Description of the project.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Workout Posture Detection</h3>
+            <p>Description of the project.</p>
+        </div>
+
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" >
+        <h2>Contact Me</h2>
+        <p>You can reach out to me at: <a class="contact-link" href="mailto:omarescala17@gmail.com">omarescala17@gmail.com</a></p>
+        <p>Phone Number: <a class="contact-link" href="tel:07951387869">07951387869</a></p>
+
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/omararatuc/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/omar-aratuc-3b1302238/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/OmarBlue?tab=repositories" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCQJ3T7NVa9woFZ-NZgy7x3w" target="_blank"><i class="fab fa-youtube-square"></i></a>
+        </div>
+    </section>
+    
+    <canvas class="background"></canvas>
+    <script src="particles.min.js"></script>
+    <script>
+        window.onload = function() {
+            Particles.init({
+                selector: '.background',
+                particles: {
+                    color: '#ffffff',
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: '#ffffff',
+                        opacity: 0.4,
+                        width: 1
+                    }
+                }
+            });
+        };
+    </script>
+
+</body>
+
+</html>
